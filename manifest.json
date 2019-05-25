@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "lichess-elohide",
+	"version": "1.0",
+
+	"description": "Removes the 'Elo'-ratings from Lichess' UI",
+	
+	"content_scripts":
+	[
+		{
+			"matches": 
+			[
+				"*://lichess.org/*"
+			],
+			"js":
+			[
+				"lichess-elohide.js"
+			]
+		}
+	]
+}
